@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Нёрдс</title>
+  </head>
+  <body class="inner">
+    <div class="container">
+      <header>
+        <div class="logo">
+          <img src="img/">
+        </div>
+        <nav class="main-menu">
+          <ul>
+            <li>
+              <a href="#">Студия</a>
+            </li>
+            <li>
+              <a href="#">Клиенты</a>
+            </li>
+            <li>
+              <a href="#">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-block">
+          <a class="cart" href="#">Корзина</a>
+        </div>
+        <div class="slider">
+        	<section class="slider-content" >
+          <p class="slider-title">Долго, дорого, скрупулезно.</p>
+          <p>Математически выверенный дизайн  для вашего сайта или мобильного приложения</p>
+          <a href="#">УЗНАТЬ БОЛЬШЕ</a>
+					</section>
+          <div class="control">
+          </div>
+        </div>
+      </header>
+      <main>
+        <aside >
+        	<form action="/echo" method="get">
+        	  <fieldset class="filter-range">
+              <legend class="filter-title">СТОИМОСТЬ:</legend>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+              </div>
+            </fieldset>
+            <fieldset class="filter-grid">
+              <legend>Сетка:</legend>
+                <p>
+                  <input type="radio" name="grid" value="adaptive" id="adaptive" checked>
+                  <label for="adaptive">Адаптивная</label>
+                </p>
+                <p>
+                  <input type="radio" name="grid" value="fixed" id="fixed">
+                  <label for="fixed">Фиксированная</label>
+                </p>
+                <p>
+                  <input type="radio" name="grid"  value="rubber" id="rubber">
+                  <label for="rubber">Резиновая </label>
+                </p>
+            </fieldset>
+            <fieldset class="filter-features">
+              <legend>ОСОБЕННОСТИ:</legend>
+							<p>
+								<input type="checkbox" name="slider" id="slider" checked>
+								<label for="slider">Слайдер</label>
+							</p>
+          		<p>
+								<input type="checkbox" name="benefits-unit" id="benefits-unit">
+								<label for="benefits-unit">Блок преимуществ</label>
+							</p>
+          		<p>
+								<input type="checkbox" name="news" id="news" checked>
+								<label for="news">Новости</label>
+							</p>
+          		<p>
+								<input type="checkbox" name="gallery" id="gallery">
+								<label for="gallery">Галерея</label>
+							</p>
+          		<p>
+								<input type="checkbox" name="basket" id="basket">
+								<label for="basket">Корзина</label>
+							</p>
+            </fieldset>
+            <input class="btn-transparent" type="submit" value="Показать">
+					</form>
+        </aside>
+        <div class="inner-content">
+          <div class="selection">
+							<ul class="clearfix">
+								<li class="selection-title"><span>Найдено: 3</span></li>
+								<li class="selection-sort"><span>Сортировка:</span> </li>
+								<li class="selection-type">
+									<a class="active">по цене</a></li>
+								<li class=selection-type>
+									<a href="#">по типу</a></li>
+								<li class="selection-type">
+									<a href="#">по рейтингу</a></li>
+								<li>
+									<div class="arrow">
+										<span class="icon-up-dir"></span>
+										<span class="icon-down-dir active"></span>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="maquette">
+							<div class="maquette-item">
+								<img src="img/" alt="">
+							</div>
+							<div class="maquette-item">
+								<img src="img/" alt="">
+							</div>
+							<div class="maquette-item">
+								<img src="img/" alt="">
+							</div>
+							<div class="maquette-item">
+								<img src="img/" alt="">
+							</div>
+							<div class="maquette-item">
+								<img src="img/" alt="">
+							</div>
+							<div class="maquette-item">
+								<img src="img/" alt="">
+							</div>
+						</div>
+      			<div class="paginator">
+							<a href="#1">1</a>
+							<a href="#2">2</a>
+							<a href="#3">3</a>
+							<a class="paginator-next" href="#next">СЛЕДУЮЩАЯ</a>
+      			</div>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <div class="map">
+        <img src="img/" alt="">
+      </div>
+      <img src="img/" alt="">
+      <div class="contacts">
+        <h3>NЁRDS DESIGN STUDIO</h3>
+        <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8 </p>
+        <p>тел. +7 (812) 275-75-75</p>
+        <a class="contacts-btn" href="#"></a>
+      </div>
+      <div class="container">
+        <div class="social">
+        <ul>
+          <li><a href="#">В контакте</a></li>
+          <li><a href="#">Фейбук</a></li>
+          <li><a href="#">Инстаграм</a></li>
+        </ul>
+        </div>
+        <div>
+          <p><span>Давайте дружить, это выгодно!</span></p>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
