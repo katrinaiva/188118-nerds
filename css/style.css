@@ -28,13 +28,12 @@ header {
 }
 
 .main-navigation {
-  width: 900px;
+  width: 880px;
 }
 
 .main-menu {
   float: left;
-  width: 730px;
-  margin-right: 60px;
+  width: 740px;
 }
 
 .user-block {
@@ -43,11 +42,12 @@ header {
 }
 
 .user-block li {
-  margin: 48px 0;
+  margin: 54px 0;
 }
 
 .cart {
   position: relative;
+  margin-left: 10px;
   padding-left: 35px;
 }
 
@@ -72,11 +72,21 @@ header {
 .main-menu li {
   display: inline-block;
   vertical-align: center;
-  margin: 48px 23px;
+  margin: 54px 22px;
 }
 
 .main-menu li:first-child {
-  margin-left: 0;
+  margin: 0;
+  margin-left: 10px;
+  margin-right: 160px;
+  margin-top: 26px;
+}
+
+.home .logo {
+  float: left;
+  width: 140px;
+  height: 56px;
+
 }
 
 .main-menu li:last-child {
@@ -107,17 +117,10 @@ header {
   border-bottom: 2px solid #fb565a;
 }
 
-.home .logo {
-  float: left;
-  width: 140px;
-  margin-right: 160px;
-  margin-top: 19px;
-}
-
 .slider {
   position: relative;
   width: 880px;
-  height: 310px;
+  height: 300px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -129,7 +132,7 @@ header {
   width: 100%;*/
   min-height: 310px;
   background-repeat: no-repeat;
-  background-position: 100% 10px;
+  background-position: 100% 0;
   /*-webkit-transition: left 0.3s ease;
      -moz-transition: left 0.3s ease;
           transition: left 0.3s ease;*/
@@ -142,10 +145,10 @@ header {
 
 .slider-controls {
   position: absolute;
-  bottom: 95px;
+  bottom: 90px;
   left: 50%;
-  width: 200px;
-  margin-left: -100px;
+  width: 180px;
+  margin-left: -90px;
   text-align: center;
 }
 
@@ -163,7 +166,7 @@ header {
 
 .slide-text {
   width: 470px;
-  padding: 24px 0;
+  padding: 19px 0;
 }
 
 .slide p {
@@ -175,7 +178,7 @@ header {
 }
 
 p.slide-title {
-  margin-bottom: 22px;
+  margin-bottom: 18px;
   font-size: 36px;
   line-height: 36px;
   font-weight: 500;
@@ -184,8 +187,8 @@ p.slide-title {
 
 .slide .btn {
   display: inline-block;
-  margin-top: 29px;
-  padding: 10px 70px;
+  margin-top: 27px;
+  padding: 10px 71px;
   font-size: 12px;
   line-height: 18px;
   color: #ffffff;
