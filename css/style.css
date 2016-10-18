@@ -1,0 +1,302 @@
+body {
+  width: 1200px;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  color: #000000;
+  background: #ffffff;
+}
+
+header {
+  background: #eeeeee;
+  margin-bottom: 80px;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.main-navigation {
+  width: 900px;
+}
+
+.main-menu {
+  float: left;
+  width: 730px;
+  margin-right: 60px;
+}
+
+.user-block {
+  float: right;
+  max-width: 100px;
+}
+
+.user-block li {
+  margin: 48px 0;
+}
+
+.cart {
+  position: relative;
+  padding-left: 35px;
+}
+
+.cart:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 6px;
+  width: 18px;
+  height: 18px;
+  background: url(/img/sprite.png) no-repeat;
+  background-position: -10px -10px;
+}
+
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.main-menu li {
+  display: inline-block;
+  vertical-align: center;
+  margin: 48px 23px;
+}
+
+.main-menu li:first-child {
+  margin-left: 0;
+}
+
+.main-menu li:last-child {
+  margin-right: 0;
+}
+
+.user-block a,
+.main-menu a {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+.user-block a:hover,
+.main-menu a:hover {
+  color: #fb565a;
+}
+
+.user-block a:active,
+.main-menu a:active {
+  color: #8f8f8f;
+}
+
+.main-menu .active {
+  color: #000000;
+  border-bottom: 2px solid #fb565a;
+}
+
+.home .logo {
+  float: left;
+  width: 140px;
+  margin-right: 160px;
+  margin-top: 19px;
+}
+
+.slider {
+  position: relative;
+  width: 880px;
+  height: 310px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slide {
+  /*position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;*/
+  min-height: 310px;
+  background-repeat: no-repeat;
+  background-position: 100% 10px;
+  /*-webkit-transition: left 0.3s ease;
+     -moz-transition: left 0.3s ease;
+          transition: left 0.3s ease;*/
+}
+
+
+.slider input[type="radio"] {
+  display: none;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 95px;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+  text-align: center;
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin: 0 3px;
+  vertical-align: center;
+  background: #ffffff;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slide-text {
+  width: 470px;
+  padding: 24px 0;
+}
+
+.slide p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #283136;
+}
+
+p.slide-title {
+  margin-bottom: 22px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 500;
+  color: #111111;
+}
+
+.slide .btn {
+  display: inline-block;
+  margin-top: 29px;
+  padding: 10px 70px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+  background: #fb565a;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.slide:nth-child(1) {
+  background-image: url(/img/slade3.png);
+}
+
+.slide:nth-child(2) {
+  background-image: url(/img/slade2.png);
+}
+
+.slide:nth-child(3) {
+  display: block;
+  background-image: url(/img/slade1.png);
+}
+
+.slide {
+  display: none;
+}
+
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+  display: block;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+  display: block;
+}
+
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+  display: block;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+  background: #c1c1c1;
+}
+
+
+
+
+
+
+
+
+.features {
+  border-bottom: 2px solid #eeeeee;
+}
+
+.features-item {
+  float: left;
+  width: 240px;
+  margin-right: 80px;
+  margin-bottom: 80px;
+}
+
+.features-item:last-child {
+  margin-right: 0;
+}
+
+.column-left {
+  float: left;
+  width: 620px;
+  margin-right: 20px;
+}
+
+.column-right {
+  float: right;
+  width: 240px;
+}
+
+.benefits ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.our-work {
+	min-height: 166px;
+  border-bottom: 2px solid #eeeeee;
+	border-top: 2px solid #eeeeee;
+}
+
+.main-footer {
+  margin-top: 85px;
+}
+
+.footer-social {
+  float: left;
+  width: 240px;
+  margin-right: 80px;
+}
+
+.footer-friends {
+  float: right;
+  width: 560px;
+}
+
+.footer-contacts {
+display: none;
+}
+
+.main-footer .container {
+  min-height: 216px;
+}
+
+.map {
+  height: 415px;
+}

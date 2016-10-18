@@ -3,16 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-    <div class="container">
-      <header>
-        <div class="logo">
-          <img src="img/logo.png" width="139" height="56" alt="Логотип Нердс">
-        </div>
-        <nav class="main-menu">
-          <ul>
+  <body class="home">
+    <header>
+      <div class="container">
+        <nav class="main-navigation clearfix">
+          <ul class="main-menu">
+          	<li class="logo">
+          		<img class="logo-img" src="img/logo.png" width="139" height="56" alt="Логотип Нердс">
+            </li>
             <li>
               <a href="#">Студия</a>
             </li>
@@ -20,17 +22,27 @@
               <a href="#">Клиенты</a>
             </li>
             <li>
-              <a href="#">Магазин</a>
+              <a class="active" href="/catalog.html">Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
             </li>
           </ul>
+					<ul class="user-block">
+        		<li>
+							<a class="cart" href="#">Корзина</a>
+						</li>
+          </ul>
         </nav>
-        <div class="user-block">
-          <a class="cart" href="#">Корзина</a>
-        </div>
         <div class="slider">
+        	<input type="radio" id="btn-1" name="toggle">
+        	<input type="radio" id="btn-2" name="toggle">
+        	<input type="radio" id="btn-3" name="toggle">
+        	<div class="slider-controls">
+						<label for="btn-1"></label>
+        		<label for="btn-2"></label>
+        		<label for="btn-3"></label>
+          </div>
           <div class="slides">
           	<div class="slide">
         			<div class="slide-text">
@@ -54,15 +66,12 @@
           		</div>
 						</div>
           </div>
-          <div class="slider-controls">
-						<i></i>
-        		<i></i>
-        		<i></i>
-          </div>
+
         </div>
-      </header>
-      <main>
-        <section class="features">
+      </div>
+    </header>
+    <main class="container">
+        <section class="features clearfix">
           <div class="features-item red">
             <img src="img/features1.jpg" width="240" height="124" alt="Промо веб-сайты">
             <h2>Веб-сайты</h2>
@@ -88,13 +97,18 @@
             </div>
           </div>
         </section>
-        <section class="about-us">
-          <p>
-            <b>Мы — маленькая, но гордая дизайн-студия из Краснодара. </b>
-          </p>
-          <p>
-            Исповедуем принципы минимализма и чистоты. Ставим математический расчет высше креатива. Работаем не покладая рук как роботы.
-          </p>
+        <section class="about clearfix">
+          <div class="about-content column-left">
+						<p>
+							<b>Мы — маленькая, но гордая дизайн-студия из Краснодара. </b>
+						</p>
+						<p>
+							Исповедуем принципы минимализма и чистоты. Ставим математический расчет высше креатива. Работаем не покладая рук как роботы.
+						</p>
+					</div>
+          <div class="about-logo column-right">
+            <img src="img/logo-data.png" width="240" height="120" alt="Логотип с датой">
+          </div>
           <div class="benefits column-left">
             <h2>Выполняем заказы на разработку:</h2>
             <ul>
@@ -110,40 +124,37 @@
               <li>Соблюдая сроки на 100%</li>
               <li>По предоплате 50%</li>
             </ul>
-            <div class="about-us-logo">
-              <img src="img/logo-data.png" width="240" height="120" alt="Логотип с датой">
-            </div>
+
           </div>
         </section>
         <div class="our-work">
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li class="our-work1"></li>
+            <li class="our-work2"></li>
+            <li class="our-work3"></li>
           </ul>
         </div>
-      </main>
-    </div>
-    <footer>
+    </main>
+    <footer class="main-footer">
       <div class="map">
         <img src="img/map.jpg" width="1200" height="415" alt="Карта">
       </div>
-      <img src="img/logo-white.png" width="230" height="190" alt="Мы тут">
-      <div class="contacts">
+     <!--<img src="img/logo-white.png" width="230" height="190" alt="Мы тут"-->
+      <div class="footer-contacts">
         <h3>NЁRDS DESIGN STUDIO</h3>
         <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8 </p>
         <p>тел. +7 (812) 275-75-75</p>
         <a class="contacts-btn" href="#"></a>
       </div>
-      <div class="container">
-        <div class="social">
+      <div class="container clearfix">
+        <div class="footer-social">
         <ul>
           <li><a href="#">В контакте</a></li>
           <li><a href="#">Фейбук</a></li>
           <li><a href="#">Инстаграм</a></li>
         </ul>
         </div>
-        <div>
+        <div class="footer-friends">
           <p><span>Давайте дружить, это выгодно!</span></p>
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
