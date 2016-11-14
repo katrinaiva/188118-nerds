@@ -3,16 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="inner">
     <header>
       <div class="container">
-        <div class="logo">
-          <img src="img/logo.png" width="139" height="56" alt="Логотип Нердс">
-        </div>
-        <nav class="main-menu">
-          <ul>
+        <nav class="main-navigation clearfix">
+          <ul class="main-menu">
+          	<li class="logo">
+<!--              <img class="logo-img" src="img/logo.png" width="139" height="56" alt="Логотип Нердс">-->
+               <a href="/index.html" title="Главная"><img class="logo-img" src="img/logo.png" width="139" height="56" alt="Логотип Нердс"></a>
+            </li>
             <li>
               <a href="#">Студия</a>
             </li>
@@ -20,29 +23,25 @@
               <a href="#">Клиенты</a>
             </li>
             <li>
-              <a href="#">Магазин</a>
+              <a class="active" href="#">Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
             </li>
           </ul>
+					<ul class="user-block">
+        		<li>
+							<a class="cart" href="#">Корзина</a>
+						</li>
+          </ul>
         </nav>
-        <div class="user-block">
-          <a class="cart" href="#">Корзина</a>
+        <div class="inner-title">
+          <h1>Добро пожаловать в магазин  готовых макетов</h1>
         </div>
-        <div class="slider">
-        	<section class="slider-content" >
-          <p class="slider-title">Долго, дорого, скрупулезно.</p>
-          <p>Математически выверенный дизайн  для вашего сайта или мобильного приложения</p>
-          <a href="#">УЗНАТЬ БОЛЬШЕ</a>
-					</section>
-          <div class="control">
-          </div>
-        </div>
-			</div>
+      </div>
     </header>
-    <main class="container">
-        <aside>
+    <main class="container clearfix">
+      <aside>
         	<form action="/echo" method="get">
         	  <fieldset class="filter-range">
               <legend class="filter-title">СТОИМОСТЬ:</legend>
@@ -62,15 +61,15 @@
               <legend>Сетка:</legend>
                 <p>
                   <input type="radio" name="grid" value="adaptive" id="adaptive" checked>
-                  <label for="adaptive">Адаптивная</label>
+                  <label class="grid-checed" for="adaptive">Адаптивная</label>
                 </p>
                 <p>
                   <input type="radio" name="grid" value="fixed" id="fixed">
-                  <label for="fixed">Фиксированная</label>
+                  <label class="grid-field" for="fixed">Фиксированная</label>
                 </p>
                 <p>
-                  <input type="radio" name="grid"  value="rubber" id="rubber">
-                  <label for="rubber">Резиновая </label>
+                  <input type="radio" name="grid"  value="rubber" id="rubber" disabled>
+                  <label class="grid-field block" for="rubber">Резиновая </label>
                 </p>
             </fieldset>
             <fieldset class="filter-features">
@@ -92,79 +91,92 @@
 								<label for="gallery">Галерея</label>
 							</p>
           		<p>
-								<input type="checkbox" name="basket" id="basket">
+								<input type="checkbox" name="basket" id="basket" disabled>
 								<label for="basket">Корзина</label>
 							</p>
+
             </fieldset>
-            <input class="btn-transparent" type="submit" value="Показать">
+<!--            <input class="benefits-btn" type="submit" value="Показать">-->
+            <a href="#" class="benefits-btn">Показать</a>
 					</form>
         </aside>
         <div class="inner-content">
           <div class="selection">
 							<ul class="clearfix">
-								<li class="selection-title"><span>Найдено: 3</span></li>
-								<li class="selection-sort"><span>Сортировка:</span> </li>
-								<li class="selection-type">
+								<li class="selection-title">Сортировать:</li>
+								<li class="selection-price">
 									<a class="active">по цене</a></li>
 								<li class=selection-type>
 									<a href="#">по типу</a></li>
 								<li class="selection-type">
-									<a href="#">по рейтингу</a></li>
+									<a href="#">по функционалу</a></li>
 								<li>
 									<div class="arrow">
-										<span class="icon-up-dir"></span>
-										<span class="icon-down-dir active"></span>
+										<span></span>
+										<span class="active"></span>
 									</div>
 								</li>
 							</ul>
 						</div>
-						<div class="maquette">
+						<div class="maquette clearfix">
 							<div class="maquette-item">
 								<img src="img/item1.jpg" width="240" height="240" alt="AVIATOR">
                 <section class="hidden">
-                  <h2>AVIATOR</h2>
+                  <h2 class="hidden-title"><a class="hidden-a" href="#">AVIATOR</a></h2>
                   <p>Одностраничный макет с авторским дизайном</p>
-                  <a class="hidden-btn">8000 Р.</a>
+                  <div class="hidden-btn">
+                    <a class="hidden-price" href="#">8000 Р.</a>
+                  </div>
                 </section>
 							</div>
 							<div class="maquette-item">
 								<img src="img/item2.jpg" width="240" height="240" alt="Sunset">
 								<section class="hidden">
-                  <h2>Sunset</h2>
+                  <h2 class="hidden-title"><a class="hidden-a" href="#">Sunset</a></h2>
                   <p>Интернет-магазин с личным кабинетом</p>
-                  <a class="hidden-btn">10000 Р.</a>
+                  <div class="hidden-btn">
+                    <a class="hidden-price" href="#">10000 Р.</a>
+                  </div>
                 </section>
 							</div>
 							<div class="maquette-item">
 								<img src="img/item3.jpg" width="240" height="240" alt="FORTE">
 								<section class="hidden">
-                  <h2>12000 Р.</h2>
+                  <h2 class="hidden-title"><a class="hidden-a" href="#">FORTE</a></h2>
                   <p>Отличный макет для личного блога</p>
-                  <a class="hidden-btn">5000 Р.</a>
+                  <div class="hidden-btn">
+                    <a class="hidden-price" href="#">5000 Р.</a>
+                  </div>
                 </section>
 							</div>
 							<div class="maquette-item">
 								<img src="img/item4.jpg" width="240" height="240" alt="Modern Organic THAI">
 								<section class="hidden">
-                  <h2>Modern Organic THAI</h2>
+                  <h2 class="hidden-title"><a class="hidden-a" href="#">Modern Organic THAI</a></h2>
                   <p>Сайт для ресторана быстрого питания</p>
-                  <a class="hidden-btn">12000 Р.</a>
+                  <div class="hidden-btn">
+                    <a class="hidden-price" href="#">12000 Р.</a>
+                  </div>
                 </section>
 							</div>
 							<div class="maquette-item">
 								<img src="img/item5.jpg" width="240" height="240" alt="AVENUE">
 								<section class="hidden">
-                  <h2>AVENUE</h2>
+                  <h2 class="hidden-title"><a class="hidden-a" href="#">AVENUE</a></h2>
                   <p>Макет для блога  о путешествиях</p>
-                  <a class="hidden-btn">8000 Р.</a>
+                  <div class="hidden-btn">
+                    <a class="hidden-price" href="#">8000 Р.</a>
+                  </div>
                 </section>
 							</div>
 							<div class="maquette-item">
 								<img src="img/item6.jpg" width="240" height="240" alt="DOVETAIL">
 								<section class="hidden">
-                  <h2>DOVETAIL</h2>
+                  <h2 class="hidden-title"><a class="hidden-a" href="#">DOVETAIL</a></h2>
                   <p>Интернет-магазин с галереей товаров</p>
-                  <a class="hidden-btn">14000 Р.</a>
+                  <div class="hidden-btn">
+                    <a class="hidden-price" href="#">14000 Р.</a>
+                  </div>
                 </section>
 							</div>
 						</div>
@@ -176,26 +188,25 @@
       			</div>
         </div>
     </main>
-    <footer>
+    <footer class="main-footer">
       <div class="map">
+<!--      	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sby!4v1477398095019" width="1200" height="415" style="border:0" allowfullscreen></iframe>-->
         <img src="img/map.jpg" width="1200" height="415" alt="Карта">
       </div>
-      <img src="img/logo-white.png" width="230" height="190" alt="Мы тут">
-      <div class="contacts">
+      <section class="footer-contacts">
         <h3>NЁRDS DESIGN STUDIO</h3>
         <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8 </p>
         <p>тел. +7 (812) 275-75-75</p>
-        <a class="contacts-btn" href="#"></a>
-      </div>
-      <div class="container">
-        <div class="social">
-        <ul>
-          <li><a href="#">В контакте</a></li>
-          <li><a href="#">Фейбук</a></li>
-          <li><a href="#">Инстаграм</a></li>
-        </ul>
+        <a class="contacts-btn" href="#">Напишите нам</a>
+      </section>
+
+      <div class="container clearfix">
+        <div class="footer-social">
+          <a class="social-btn social-vk" href="#">В контакте</a>
+          <a class="social-btn social-fb" href="#">Фейбук</a>
+          <a class="social-btn social-in" href="#">Инстаграм</a>
         </div>
-        <div>
+        <div class="footer-friends">
           <p><span>Давайте дружить, это выгодно!</span></p>
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
