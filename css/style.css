@@ -335,6 +335,10 @@ header {
   border-bottom: 2px solid #fb565a;
 }
 
+.main-menu .active:hover {
+  color: #000000;
+}
+
 .slider {
   position: relative;
   width: 880px;
@@ -372,6 +376,7 @@ header {
 
 .slider-controls label {
   display: inline-block;
+  vertical-align: middle;
   width: 4px;
   height: 4px;
   margin: 0 3px;
@@ -450,7 +455,6 @@ p.slide-title {
   background: #c1c1c1;
 }
 
-
 .features {
   border-bottom: 2px solid #eeeeee;
   margin-bottom: 70px;
@@ -471,7 +475,9 @@ p.slide-title {
 .features-item p,
 .features-item h2 {
   margin: 0;
-  padding: 0;}
+  padding: 0;
+  font-weight: inherit;
+}
 
 .features-item h2 {
   margin-top: 18px;
@@ -485,6 +491,7 @@ p.slide-title {
   margin-bottom: 26px;
   font-size: 15px;
   line-height: 22px;
+  color: #283136;
 }
 
 .item-btn {
@@ -541,7 +548,6 @@ p.slide-title {
   background: #c09b24;
 }
 
-
 .column-left {
   float: left;
   width: 610px;
@@ -577,6 +583,7 @@ p.slide-title {
  h2{
   margin: 0;
   padding: 0;
+  font-weight: inherit;
 }
 
 .about p {
@@ -600,6 +607,7 @@ p.slide-title {
   margin-top: 28px;
   margin-bottom: 22px;
   font-size: 16px;
+  font-weight: inherit;
   line-height: 22px;
   text-transform: uppercase;
   color: #283136;
@@ -627,7 +635,6 @@ p.slide-title {
   margin: 0;
   padding: 0;
   list-style: none;
-
 }
 
 .our-work li {
@@ -647,7 +654,7 @@ p.slide-title {
 }
 
 .our-work li:last-child {
-	 margin-right: 0;
+  margin-right: 0;
 }
 
 .our-work-1 {
@@ -692,7 +699,6 @@ p.slide-title {
   background-image: url(/img/woks3-hv.png);
 }
 
-
 .main-footer {
   margin-top: 85px;
   position: relative;
@@ -715,14 +721,12 @@ p.slide-title {
 }
 
 .footer-contacts {
-/*  display: none;*/
   position: absolute;
   top: 88px;
   left: 159px;
   width: 252px;
   height: 242px;
   background: #ffffff;
-/*  text-align: center;*/
 }
 
 .footer-contacts h3,
@@ -730,7 +734,7 @@ p.slide-title {
   margin: 0;
   padding: 0;
   margin-left: 22px;
-/*  margin-top: 15px;*/
+  font-weight: inherit;
 }
 
 .footer-contacts p {
@@ -767,7 +771,6 @@ p.slide-title {
 .map {
   position: relative;
   height: 415px;
-/*  background: #e9e5dc url(../img/map.jpg) no-repeat;*/
 }
 
 .map::after {
@@ -921,7 +924,8 @@ p.slide-title {
 
 input[type="text"] {
   display: inline-block;
-	margin-top: -13px;
+  vertical-align: top;
+	margin-top: -7px;
   width: 190px;
   padding: 8px 12px;
   border: none;
@@ -946,7 +950,6 @@ input[placeholder],
   color: #000000;
   text-transform: uppercase;
 }
-
 
 .letter-field {
   box-sizing: border-box;
@@ -982,7 +985,7 @@ input[placeholder],
   padding-right: 10px;
   font-size: 40px;
   line-height: 48px;
-  font-weight: 500;
+  font-weight: inherit;
   text-transform: uppercase;
 }
 
@@ -1044,7 +1047,6 @@ aside {
   margin-left: 32px;
 }
 
-
 .arrow::before {
   content: "";
   position: absolute;
@@ -1056,7 +1058,6 @@ aside {
   background-position: -655px -10px;
 }
 
-
 .arrow::after {
   content: "";
   position: absolute;
@@ -1067,7 +1068,6 @@ aside {
   background: url(../img/sprite.png) no-repeat;
   background-position: -852px -10px;
 }
-
 
 .arrow:active::after  {
   background: url(../img/sprite.png) no-repeat;
@@ -1129,12 +1129,10 @@ aside {
 
 .hidden-a {
   font-size: 18px;
-/*  font-weight: normal;*/
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
 }
-
 
 .hidden p {
   margin: 0;
@@ -1142,7 +1140,6 @@ aside {
   font-size: 14px;
   line-height: 18px;
 }
-
 
 .hidden-btn {
   position: absolute;
@@ -1219,7 +1216,6 @@ aside {
   border-top: 2px solid #b5b5b5;
 }
 
-
 .filter-range {
   border: none;
   outline: none;
@@ -1280,12 +1276,12 @@ aside {
 }
 
 .price-controls {
-/*  height: 38px;*/
   font-size: 0;
 }
 
 .price-controls label {
   display: inline-block;
+  vertical-align: bottom;
   width: 50%;
   margin-bottom: 33px;
   font-size: 16px;
