@@ -5,7 +5,7 @@
 		<title>Нёрдс</title>
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
 		<link href="css/normalize.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
+		<link href="css/style-min.css" rel="stylesheet">
 	</head>
 	<body class="inner">
 		<header>
@@ -13,7 +13,6 @@
 				<nav class="main-navigation clearfix">
 					<ul class="main-menu">
 						<li class="logo">
-<!--              <img class="logo-img" src="img/logo.png" width="139" height="56" alt="Логотип Нердс">-->
 							 <a href="index.html" title="Главная"><img class="logo-img" src="img/logo.png" width="139" height="56" alt="Логотип Нердс"></a>
 						</li>
 						<li>
@@ -192,12 +191,36 @@
 			<div class="map">
 <!--      	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sby!4v1477398095019" width="1200" height="415" style="border:0" allowfullscreen></iframe>-->
 				<img src="img/map.jpg" width="1200" height="415" alt="Карта">
+				<div class="modal-content">
+			    <button class="modal-close" type="button" title="Закрыть">Закрыть</button>
+			  		<form class="modal-form clearfix" action="/echo" method="post">
+							<div class="wrapper clearfix">
+							<div class="modal-left">
+								<p><label for="name">Ваше имя</label></p>
+								<input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста" required>
+							</div>
+							<div class="modal-right">
+								<p><label for="mail">Ваш e-mail:</label></p>
+								<input type="text" id="mail" name="mail" placeholder="Для отправки ответа" required>
+							</div>
+							</div>
+							<div>
+								<p><label for="letter-field">Текст письма:</label></p>
+								<textarea class="letter-field" name="letter-field" id="letter-field" placeholder="В свободной форме"></textarea>
+							</div>
+							<div>
+								<button class="modal-btn" type="submit">Отправить</button>
+							</div>
+						</form>
+		  	</div>
 			</div>
 			<section class="footer-contacts">
-				<h3>NЁRDS DESIGN STUDIO</h3>
-				<p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8 </p>
-				<p>тел. +7 (812) 275-75-75</p>
-				<a class="contacts-btn" href="#">Напишите нам</a>
+			  <div>
+          <h3>NЁRDS DESIGN STUDIO</h3>
+          <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8 </p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <a class="contacts-btn" href="#">Напишите нам</a>
+        </div>
 			</section>
 
 			<div class="container clearfix">
@@ -212,6 +235,7 @@
 				</div>
 			</div>
 		</footer>
+		<script src="js/modal-content.js"></script>
 	</body>
 </html>
 
