@@ -421,16 +421,16 @@ p.slide-title {
 }
 
 .slide:nth-child(1) {
-  background-image: url(/img/slade3.png);
+  background-image: url(../img/slade3.png);
 }
 
 .slide:nth-child(2) {
-  background-image: url(/img/slade2.png);
+  background-image: url(../img/slade2.png);
 }
 
 .slide:nth-child(3) {
   display: block;
-  background-image: url(/img/slade1.png);
+  background-image: url(../img/slade1.png);
 }
 
 .slide {
@@ -658,45 +658,45 @@ p.slide-title {
 }
 
 .our-work-1 {
-  background-image: url(/img/woks1.png);
+  background-image: url(../img/woks1.png);
   background-repeat: no-repeat;
 	background-position: 21px 23px;
 }
 
 .our-work-2 {
-	background-image: url(/img/woks2.png);
+	background-image: url(../img/woks2.png);
   background-repeat: no-repeat;
 	background-position: 27px 10px;
 }
 
 .our-work-3 {
-	background-image: url(/img/woks3.png);
+	background-image: url(../img/woks3.png);
   background-repeat: no-repeat;
 	background-position: 34px 1px;
 }
 
 .our-work-1:hover {
-  background-image: url(/img/woks1-hv.png);
+  background-image: url(../img/woks1-hv.png);
 }
 
 .our-work-2:hover {
-  background-image: url(/img/woks2-hv.png);
+  background-image: url(../img/woks2-hv.png);
 }
 
 .our-work-3:hover {
-  background-image: url(/img/woks3-hv.png);
+  background-image: url(../img/woks3-hv.png);
 }
 
 .our-work-1:active {
-  background-image: url(/img/woks1-hv.png);
+  background-image: url(../img/woks1-hv.png);
 }
 
 .our-work-2:active {
-  background-image: url(/img/woks2-hv.png);
+  background-image: url(../img/woks2-hv.png);
 }
 
 .our-work-3:active {
-  background-image: url(/img/woks3-hv.png);
+  background-image: url(../img/woks3-hv.png);
 }
 
 .main-footer {
